@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line_item"
+        android:orientation="horizontal">
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_weight="2">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/text_title"
+                  android:text="标题"
+                  android:textSize="20dp">
+        </TextView>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/text_content"
+                  android:text="内容"
+                  android:textSize="20dp">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_weight="1">
+        <ImageView android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:id="@+id/image_path"
+                   android:background="@drawable/ic_launcher_background"
+                   android:layout_gravity="center">
+        </ImageView>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/text_time"
+                  android:text="时间"
+                  android:layout_gravity="center">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
