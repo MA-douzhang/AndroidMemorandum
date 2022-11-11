@@ -119,12 +119,6 @@ public class AddContentActivity extends AppCompatActivity {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-            }
-        });
-        buttonSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
                 String time = LocalDateTime.now().truncatedTo(ChronoUnit.MINUTES).toString();
                 ContentValues contentValues = new ContentValues();
                 contentValues.put("title",editTitle.getText().toString());
@@ -160,8 +154,9 @@ public class AddContentActivity extends AppCompatActivity {
                 break;
             case TAKE_PHOTO:
                 Uri url = data.getData();
-                if(url !=null){
+                if(url != null){
                     imageView.setImageURI(url);
+                    tmpPath = url.toString();
                 }
                 break;
         }
